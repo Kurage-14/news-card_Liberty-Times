@@ -2,7 +2,8 @@
 ## 使用技術
 - HTML5
 - CSS3
-- Bootstrap 5.3
+- Bootstrap 5
+- SASS
   
 ## 設計理念
 ### 一、資訊整理與視覺層級

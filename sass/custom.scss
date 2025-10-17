@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+// custom variables
+$primary: #BD0200;
+$font-size-root: 16px;
+$body-bg: #EBEBEB;
+$font-family-sans-serif: "Noto Sans TC", sans-serif;
+$card-bg: #fff;
+$card-border-radius: .75rem;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 480px,
+    md: 768px,
+    lg: 1024px
+);
+
+$container-max-widths: (
+    sm: 420px,
+    md: 720px,
+    lg: 960px
+);
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.02em;
+}
+
+.card {
+    .card-title {
+        color: #2B2214;
+    }
+
+    &:hover {
+        .card-img-top {
+            transition: transform 0.5s ease-in-out;
+            transform: scale(1.07);
+        }
+
+        .card-title {
+            transition: color 0.5s ease-in-out;
+            color: $primary;
+        }
+    }
+
+    .date {
+        color: #636363;
+    }
+
+    .btn-outline-primary {
+        border-radius: .25rem;
+    }
+}
+
+.two-line-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "brown": #2B2214
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+$custom-font-size: (
+    "sm": $font-size-sm
+);
+
+$font-sizes: map-merge($custom-font-size, $font-sizes);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+// @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
