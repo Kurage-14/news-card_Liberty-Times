@@ -32,6 +32,16 @@ body {
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
 } */
 
+.card:hover .card-img-top {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.07);
+}
+
+.card:hover .card-title {
+    transition: color 0.5s ease-in-out;
+    color: #BD0200;
+}
+
 .card-title {
     color: #2B2214;
 }
@@ -51,6 +61,16 @@ body {
 .card .badge {
     color: #BD0200;
     border: 1px solid #BD0200;
+    background-color: white;
+}
+
+.card .badge:hover {
+    background-color: #EFEFEF;
+}
+
+.card .badge:active {
+    background-color: #BD0200;
+    color: white;
 }
 
 @media (min-width: 1024px) {
